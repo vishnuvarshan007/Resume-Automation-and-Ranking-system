@@ -106,22 +106,6 @@ The Admin Panel displays all resumes in ranked order:
 
 ## 📨 Customizing Email Template
 Modify the `email.txt` file to change the email content:
-```
-Subject: Your Resume Ranking is Here!
-
-Dear {name},
-
-We are excited to share that your resume has been ranked!
-
-Rank: {rank}  
-Score: {score}  
-
-Congratulations! If you have any questions, feel free to reach out.
-
-Best Regards,  
-[Your Team]
-```
-🔹 The placeholders **`{name}`**, **`{rank}`**, and **`{score}`** will be **automatically replaced**.
 
 ---
 
