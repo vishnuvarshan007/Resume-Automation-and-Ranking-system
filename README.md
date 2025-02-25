@@ -50,18 +50,7 @@ pip install -r requirements.txt
 
 ### 2️⃣ Set Up MySQL Database
 Create a **MySQL database** and execute `database.sql`:
-```sql
-CREATE DATABASE resume_ranking;
-USE resume_ranking;
 
-CREATE TABLE resumes (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255),
-    email VARCHAR(255),
-    filename VARCHAR(255),
-    score INT
-);
-```
 
 ### 3️⃣ Configure `app.py`
 Update the **database credentials** in `app.py`:
