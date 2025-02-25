@@ -149,11 +149,3 @@ Best Regards,
 ✔ Run `database.sql` again if tables are missing.  
 
 ---
-
-## 👥 Contributors
-- **Your Name** - [GitHub](https://github.com/yourusername)
-
----
-
-## 📝 License
-This project is licensed under the **MIT License**.
