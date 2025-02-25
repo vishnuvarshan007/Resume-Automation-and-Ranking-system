@@ -1,0 +1,6 @@
+flask
+mysql.connector
+PyPDF2 
+flask_cors
+re
+flask_mail
