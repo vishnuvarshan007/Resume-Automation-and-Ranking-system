@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+        body {
+            background: linear-gradient(to right, #eef2f3, #8e9eab);
+            color: #333;
+        }
+        /* Navigation Bar */
+        nav.primary-navigation {
+            text-align: center;
+            padding: 15px 0;
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav.primary-navigation ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav.primary-navigation ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        nav.primary-navigation ul li a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #fff;
+            font-weight: 500;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        nav.primary-navigation ul li a:hover,
+        nav.primary-navigation ul li a.active {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: #fff;
+        }
+        /* Content Wrapper */
+        .content-wrapper {
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            max-width: 700px;
+            margin: auto;
+            padding: 40px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        h2, h3 {
+            color: #222;
+            margin-bottom: 20px;
+        }
+        .team-members {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            list-style: none;
+            padding: 0;
+        }
+        .team-members li {
+            background: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+        .team-members li:hover {
+            background: #e3e3e3;
+            transform: scale(1.05);
+        }
+        .team-members span {
+            font-weight: normal;
+            color: #555;
+        }
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="primary-navigation">
+        <ul>
+            <li><a href="dashboard.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="upload.html">Upload Resume</a></li>
+            <li><a href="login.html">Admin Login</a></li>
+        </ul>
+    </nav>
+    <div class="content-wrapper">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <h3>Our Team</h3>
+            <ul class="team-members">
+                <li>Vishnuvarshan <span>9876543210</span></li>
+                <li>Srikadir <span>8765432109</span></li>
+                <li>Sudhir <span>7654321098</span></li>
+                <li>Shusil Singh <span>6543210987</span></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

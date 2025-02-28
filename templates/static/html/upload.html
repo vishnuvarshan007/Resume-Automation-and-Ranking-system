@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Resumes</title>
+    <link rel="stylesheet" href="../css/upload.css">
+</head>
+<body>
+    <nav role="navigation" class="primary-navigation">
+        <ul>
+          <li><a href="dashboard.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="upload.html" class="Upload">Upload Resume</a></li>
+          <li><a href="login.html" class="Administration">Administration Login</a></li>
+
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <h3>Upload Resumes</h3>
+
+            <form id="upload-form" enctype="multipart/form-data">
+                <div class="drop_box">
+                    <h4>Select Resumes</h4>
+                    <p>Only PDF or DOCX files are allowed.</p>
+                    <input type="file" id="resume-files" name="resumes" multiple class="form-input">
+                </div>
+                <button type="submit" class="btn">Upload Resumes</button>
+            </form>
+
+            <div id="message"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

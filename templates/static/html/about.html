@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Automated Resume Processing</title>
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h3, h4 {
+            text-align: center;
+            color: #333;
+            transition: color 0.3s ease-in-out;
+        }
+
+        h3:hover, h4:hover {
+            color: #005af0;
+        }
+
+        p, li {
+            text-align: justify;
+            color: #444;
+        }
+
+        /* Navigation Bar */
+        .primary-navigation {
+            background: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .primary-navigation ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .primary-navigation ul li {
+            padding: 15px 20px;
+        }
+
+        .primary-navigation ul li a {
+            color: black;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .primary-navigation ul li a:hover {
+            background-color: #005af0;
+            color: white;
+        }
+
+        .primary-navigation ul li a.active {
+            background-color: #005af0;
+            color: white;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+        }
+
+        .footer-text {
+            text-align: center;
+            font-style: italic;
+            margin-top: 20px;
+            color: #666;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Spacing for content below the fixed navbar */
+        .content-wrapper {
+            padding-top: 80px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav role="navigation" class="primary-navigation">
+        <ul>
+            <li><a href="dashboard.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="upload.html">Upload Resume</a></li>
+            <li><a href="login.html">Administration Login</a></li>
+        </ul>
+    </nav>
+    
+    <div class="content-wrapper">
+        <div class="container">
+            <h3>ABOUT US</h3>
+            <h4>Automated Resume Processing and Ranking System</h4>
+            <p><strong>Team Members:</strong> Vishnuvarshan, Srikadir, Sudhir, Shusil Singh</p>
+            
+            <h4>Abstract</h4>
+            <p>
+                Recruitment is a time-sensitive process that requires efficient screening of resumes to identify the best candidates for a job. Traditional resume evaluation is labor-intensive and prone to inconsistencies. This project presents an Automated Resume Processing and Ranking System, a web-based platform that allows users to upload resumes, extract key information from them, and rank them based on predefined company requirements.
+            </p>
+            
+            <h4>Introduction</h4>
+            <p>
+                This project aims to automate resume screening by extracting text from uploaded resumes and ranking them based on their relevance to job requirements, thus improving efficiency in the hiring process.
+            </p>
+            
+            <h4>Key Features</h4>
+            <ul>
+                <li>Allow users to upload resumes</li>
+                <li>Extract text from resumes</li>
+                <li>Compare extracted text with job requirements</li>
+                <li>Assign a ranking score to each resume</li>
+                <li>Present a sorted list of candidates</li>
+            </ul>
+            
+            <h4>Problem Statement</h4>
+            <p>
+                Recruiters spend significant time manually screening resumes. The process is time-consuming, error-prone, and difficult to standardize. This project aims to automate the resume screening process to make hiring more efficient.
+            </p>
+            
+            <h4>Technologies Used</h4>
+            <ul>
+                <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+                <li><strong>Backend:</strong> Python (Flask)</li>
+                <li><strong>Database:</strong> MySQL</li>
+                <li><strong>Libraries:</strong> PyPDF2, Flask-CORS, mysql-connector-python, Flask_Mail</li>
+            </ul>
+            
+            <h4>System Implementation</h4>
+            <ol>
+                <li>Users upload resumes via a web interface.</li>
+                <li>The system extracts text from PDFs using PyPDF2.</li>
+                <li>Extracted text is analyzed based on job requirements.</li>
+                <li>A score is assigned to each resume based on keyword presence.</li>
+                <li>Resumes are ranked from best to worst fit.</li>
+            </ol>
+            
+            <h4>Conclusion</h4>
+            <p>
+                This project automates resume screening, making hiring faster, fairer, and more accurate. Future improvements can include AI-based resume parsing and more sophisticated ranking algorithms.
+            </p>
+            
+            <h4>References</h4>
+            <ol>
+                <li>Jurafsky, D., & Martin, J. H. (2021). Speech and Language Processing (3rd ed.).</li>
+                <li>Liu, H., & Yu, Y. (2021). Enhancing Recruitment with AI-Based Resume Parsing and Matching.</li>
+            </ol>
+            
+            <p class="footer-text">
+                At Sky-Hostings Solutions, we understand that your online presence is the cornerstone of your business success. That's why we offer top-of-the-line hosting services designed to keep your website running smoothly, securely, and without interruption.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Script to highlight the active link in navigation bar
+        document.addEventListener("DOMContentLoaded", function () {
+            let navLinks = document.querySelectorAll(".primary-navigation ul li a");
+            let currentPath = window.location.pathname.split("/").pop();
+            
+            navLinks.forEach(link => {
+                if (link.getAttribute("href") === currentPath) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

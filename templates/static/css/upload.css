@@ -1,0 +1,164 @@
+/* Importing Poppins Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav.primary-navigation {
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav.primary-navigation ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav.primary-navigation ul li {
+  display: inline-block;
+}
+
+nav.primary-navigation ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+nav.primary-navigation ul li a:hover {
+  background: #3ca0e7;
+  color: white;
+}
+
+/* Main Container */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 60px;
+}
+
+/* Card Styling */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 400px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #005af0;
+}
+
+/* Upload Box */
+.drop_box {
+  padding: 20px;
+  border: 2px dashed #a3a3a3;
+  border-radius: 8px;
+  background: rgba(60, 160, 231, 0.05);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.drop_box:hover {
+  border-color: #005af0;
+  background: rgba(60, 160, 231, 0.1);
+}
+
+.drop_box h4 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.drop_box p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* File Upload Input */
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  background-color: #e2e2e2;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.form-input:hover {
+  background-color: #d6d6d6;
+}
+
+/* Buttons */
+.btn {
+  background: #005af0;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.btn:hover {
+  background: white;
+  color: #005af0;
+  border: 1px solid #005af0;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .container {
+    padding: 20px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  nav.primary-navigation ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

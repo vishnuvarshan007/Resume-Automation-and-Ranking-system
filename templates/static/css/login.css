@@ -1,0 +1,121 @@
+/* Importing Poppins Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #e3f2fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Login Container */
+.login-container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 400px;
+}
+
+.login-container h2 {
+  color: #1565c0;
+  margin-bottom: 20px;
+}
+
+/* Input Group */
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 500;
+  color: #0d47a1;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #90caf9;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #1565c0;
+  outline: none;
+  box-shadow: 0 0 5px rgba(21, 101, 192, 0.5);
+}
+
+/* Login Button */
+button {
+  width: 100%;
+  padding: 10px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #1565c0;
+}
+
+/* Error Message */
+#error-message {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Navigation Bar */
+nav.primary-navigation {
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav.primary-navigation ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav.primary-navigation ul li {
+  display: inline-block;
+}
+
+nav.primary-navigation ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+nav.primary-navigation ul li a:hover {
+  background: #3ca0e7;
+  color: white;
+}
