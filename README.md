@@ -20,6 +20,11 @@ This project is a **Flask-based Resume Ranking System** that:
 
 ---
 
+## ⚠️ Disclaimer
+This project **contains bugs**, and the uploader's name is extracted from the filename. Use with caution.
+
+---
+
 ## 📂 Folder Structure
 ```
 Resume-Ranking/
