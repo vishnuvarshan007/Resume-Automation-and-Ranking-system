@@ -17,7 +17,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 db_config = {
     'host': 'localhost',
     'user': 'root',
-    'password': 'manager',
+    'password': '',
     'database': 'resume_db',
     'port': 3306  # Change to 3307 if needed
 }
@@ -26,9 +26,9 @@ db_config = {
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = 'vishnuvarshan34@gmail.com'  # Your full Gmail address
-app.config['MAIL_PASSWORD'] = 'wdkp gnhe jmge lctr'  # Your generated App Password
-app.config['MAIL_DEFAULT_SENDER'] = 'vishnuvarshan34@gmail.com'  # Same as your email
+app.config['MAIL_USERNAME'] = ''  # Your full Gmail address
+app.config['MAIL_PASSWORD'] = ''  # Your generated App Password
+app.config['MAIL_DEFAULT_SENDER'] = ''  # Same as your email
 
 mail = Mail(app)
 
@@ -51,7 +51,6 @@ def login():
     data = request.get_json()
     username = data['username']
     password = data['password']
-    print(username, password)
 
     conn = connect_to_db()
     if not conn:
